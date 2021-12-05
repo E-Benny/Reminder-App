@@ -1,0 +1,117 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+  
+  ul li {
+    curser: pointer;
+    position: relative;
+    padding: 12px 8px 12px 40px;
+    background: linear-gradient(to right, #666699 -1%, #ffffff 100%);
+    font-size: 20px;
+    transition: 0.2s;
+    font-family: 'Montserrat', sans-serif;
+  
+   
+  /* This is To Make The List Items Unselectable*/
+  -webkit-user-select: none;
+  -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  ul li:nth-child (odd) {
+    background: #ddd;
+  }
+  
+  ul li.checked {
+    background: #888;
+    color: #fff;
+    text-decoration: line-through;
+  }
+  
+  ul li.checked::before {
+    content: '';
+    position: absolute;
+    border-color: #fff;
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    top: 10px;
+    left: 16px;
+    transform: rotate(45deg);
+    height: 15px;
+    width: 7px;
+  }
+  
+  /* This Is To Style The Close Button*/
+  .close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 12px 16px 12px 16px;
+  }
+  
+  .close:hover {
+    background-color: f44336;
+    color: red;
+  }
+  
+  /*This Is To Style The Header*/
+  .header {
+    background: linear-gradient(to top left, #0000cc 0%, #66ccff 100%);
+    padding: 30px 40px;
+    color: white;
+    text-align: center;
+  }
+  
+  /*Clears Floats After The Header*/
+  .header:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* This Is To Style The Input*/
+  input {
+    margin: 0;
+    border: none;
+    border-radius: 0;
+    width: 75%;
+    padding: 10px;
+    float: left;
+    font-size: 16px;
+  }
+  
+  /* This is To Style The "Add" Button*/
+  .addBtn {
+    padding: 10px;
+    width: 25%;
+    background: linear-gradient(to bottom right, #0000ff -1%, #00ffff 100%);
+    color: white;
+    float: left;
+    text-align: center;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 20px;
+    font-family: 'Hahmlet', serif;
+  }
+  
+  .addBtn:hover {
+    background: linear-gradient(to bottom, #3366ff 0%, #ffffff 100%);
+  }
+  
+  h2 {
+    font-family: 'Hahmlet', serif;
+    font-size: 27px;
+    text-decoration: underline;
+  }
+  
+  body {
+    background: linear-gradient(to top, #6666ff -1%, #ffffff 100%);
+    height: 100vh;
+  }
